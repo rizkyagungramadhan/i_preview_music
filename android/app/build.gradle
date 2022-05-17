@@ -59,7 +59,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.i_preview_music"
+        applicationId "i.preview.music"
         minSdkVersion min_sdk_version
         targetSdkVersion sdk_version
         versionCode version_code

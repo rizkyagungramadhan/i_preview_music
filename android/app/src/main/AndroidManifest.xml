@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.i_preview_music">
+    package="i.preview.music">
    <application
-        android:label="i_preview_music"
+        android:label="iPreview Music"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
