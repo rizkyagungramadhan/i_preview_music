@@ -11,7 +11,7 @@ class Repository {
   Repository._();
 
   ///API
-  late final MusicApi _musicApi;
+  late MusicApi _musicApi;
 
   static final Repository _repository = Repository._();
 

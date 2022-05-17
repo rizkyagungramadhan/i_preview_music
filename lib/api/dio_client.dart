@@ -8,7 +8,7 @@ import 'package:i_preview_music/utility/response_exception.dart';
 /// on 5/17/2022.
 
 class DioClient {
-  late final Dio _dio;
+  late Dio _dio;
 
   DioClient._();
 
