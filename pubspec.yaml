@@ -35,7 +35,6 @@ dependencies:
 
   ## Common
   connectivity: ^3.0.6
-  equatable: ^2.0.3
   fluttertoast: ^8.0.9
   intl: ^0.17.0
   json_annotation: ^4.5.0

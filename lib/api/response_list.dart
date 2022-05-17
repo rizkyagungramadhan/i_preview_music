@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:i_preview_music/utility/app_exception.dart';
 import 'package:i_preview_music/utility/extension/string_ext.dart';
 import 'package:i_preview_music/utility/response_exception.dart';
@@ -9,7 +8,7 @@ import 'package:json_annotation/json_annotation.dart';
 part 'response_list.g.dart';
 
 @JsonSerializable(genericArgumentFactories: true)
-class ResponseList<T> extends Equatable {
+class ResponseList<T> {
   @JsonKey(name: "resultCount")
   final int? total;
   @JsonKey(name: "results")
@@ -25,7 +24,8 @@ class ResponseList<T> extends Equatable {
   /// @author rizkyagungramadhan@gmail.com on 17-May-2022, Tue, 22:43.
   factory ResponseList.fromJson(
       dynamic response, T Function(Object? json) fromJsonT) {
-    if (response is! Map<String, dynamic>) throw AppException("Response should be in Map types");
+    if (response is! Map<String, dynamic>)
+      throw AppException("Response should be in Map types");
     return _$ResponseListFromJson(response, fromJsonT);
   }
 
@@ -41,7 +41,4 @@ class ResponseList<T> extends Equatable {
       (status is int
           ? "Oops something went wrong with error code : $status"
           : "Unknown error");
-
-  @override
-  List<Object?> get props => [total, data, status, message];
 }
