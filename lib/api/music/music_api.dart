@@ -25,7 +25,7 @@ class MusicApi {
   }
 
   /// Doc : Use it for development purpose only since the Search API is limited to approximately 20 calls per minute.
-  /// @author rizkyagungramadhan@gmail.com on 01-Apr-2022, Fri, 20:22.
+  /// @author rizkyagungramadhan@gmail.com on 17-May-2022, Tue, 21:31.
   // Future<ResponseList<MusicTrackResponse>> search(
   //     MusicTrackRequest request) async {
   //   return await rootBundle
