@@ -11,8 +11,8 @@ import 'package:i_preview_music/style/app_text_style.dart';
 import 'package:i_preview_music/widget/app_text.dart';
 import 'package:i_preview_music/widget/shimmer/shimmer_avatar.dart';
 import 'package:i_preview_music/widget/shimmer/shimmer_avatar_style.dart';
+import 'package:i_preview_music/widget/tapdebouncer/tap_debouncer.dart';
 import 'package:lottie/lottie.dart';
-import 'package:tap_debouncer/tap_debouncer.dart';
 
 /// Created by rizkyagungramadhan@gmail.com
 /// on 5/17/2022.
