@@ -11,7 +11,7 @@ class AppPage {
   const AppPage._();
 
   static final routes = [
-    GetPage(name: AppRoute.main, page: () => const MainPage()),
-    GetPage(name: AppRoute.trackDetail, page: () => const TrackDetailPage()),
+    GetPage(name: AppRoute.main, page: () => MainPage()),
+    GetPage(name: AppRoute.trackDetail, page: () => TrackDetailPage()),
   ];
 }
