@@ -9,8 +9,9 @@ import 'package:i_preview_music/style/app_color.dart';
 import 'package:i_preview_music/style/app_dimen.dart';
 import 'package:i_preview_music/style/app_text_style.dart';
 import 'package:i_preview_music/widget/app_text.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar_style.dart';
 import 'package:lottie/lottie.dart';
-import 'package:skeletons/skeletons.dart';
 import 'package:tap_debouncer/tap_debouncer.dart';
 
 /// Created by rizkyagungramadhan@gmail.com
@@ -57,8 +58,8 @@ class MusicItemView extends StatelessWidget {
                             fadeOutDuration: Duration.zero,
                             fit: BoxFit.cover,
                             imageUrl: item.trackArtWorkUrl,
-                            placeholder: (context, url) => const SkeletonAvatar(
-                              style: SkeletonAvatarStyle(
+                            placeholder: (context, url) => const ShimmerAvatar(
+                              style: ShimmerAvatarStyle(
                                 width: AppDimen.iconSizeMax,
                                 height: AppDimen.iconSizeMax,
                               ),

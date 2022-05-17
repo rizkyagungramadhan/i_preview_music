@@ -48,12 +48,10 @@ dependencies:
   dio: ^4.0.6
 
   ## Widgets
-#  audio_video_progress_bar: ^0.10.0
   cached_network_image: ^3.2.0
   just_audio: ^0.9.20
   lottie: ^1.2.2
   palette_generator: ^0.3.3
-  skeletons: ^0.0.3
   tap_debouncer: ^2.0.2
   url_launcher: ^6.0.20
 

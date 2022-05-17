@@ -10,9 +10,10 @@ import 'package:i_preview_music/widget/app_text.dart';
 import 'package:i_preview_music/widget/mediaprogressbar/media_progress_bar.dart';
 import 'package:i_preview_music/widget/mediaprogressbar/time_label_location.dart';
 import 'package:i_preview_music/widget/scrolling_text.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar_style.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:skeletons/skeletons.dart';
 
 /// Created by rizkyagungramadhan@gmail.com
 /// on 5/17/2022.
@@ -124,8 +125,8 @@ class MusicPlayerView extends StatelessWidget {
                             fadeOutDuration: Duration.zero,
                             fit: BoxFit.cover,
                             imageUrl: item.trackArtWorkUrl,
-                            placeholder: (context, url) => const SkeletonAvatar(
-                              style: SkeletonAvatarStyle(
+                            placeholder: (context, url) => const ShimmerAvatar(
+                              style: ShimmerAvatarStyle(
                                 width: AppDimen.iconSizeMax2,
                                 height: AppDimen.iconSizeMax2,
                               ),

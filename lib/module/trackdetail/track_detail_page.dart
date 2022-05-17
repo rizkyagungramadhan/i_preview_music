@@ -13,7 +13,8 @@ import 'package:i_preview_music/widget/app_screen.dart';
 import 'package:i_preview_music/utility/extension/string_ext.dart';
 import 'package:i_preview_music/widget/app_text.dart';
 import 'package:i_preview_music/widget/scrolling_text.dart';
-import 'package:skeletons/skeletons.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar.dart';
+import 'package:i_preview_music/widget/shimmer/shimmer_avatar_style.dart';
 
 /// Created by rizkyagungramadhan@gmail.com
 /// on 5/17/2022.
@@ -83,8 +84,8 @@ class TrackDetailPage extends StatelessWidget {
                           fadeOutDuration: Duration.zero,
                           fit: BoxFit.cover,
                           imageUrl: item.trackArtWorkUrl,
-                          placeholder: (context, url) => SkeletonAvatar(
-                            style: SkeletonAvatarStyle(
+                          placeholder: (context, url) => ShimmerAvatar(
+                            style: ShimmerAvatarStyle(
                               width: Get.width / 2,
                               height: Get.width / 2,
                             ),
