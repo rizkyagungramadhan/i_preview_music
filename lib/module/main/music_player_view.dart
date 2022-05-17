@@ -1,4 +1,3 @@
-import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:i_preview_music/api/music/music_track_response.dart';
@@ -8,6 +7,8 @@ import 'package:i_preview_music/style/app_dimen.dart';
 import 'package:i_preview_music/style/app_text_style.dart';
 import 'package:i_preview_music/utility/extension/widget_ext.dart';
 import 'package:i_preview_music/widget/app_text.dart';
+import 'package:i_preview_music/widget/mediaprogressbar/media_progress_bar.dart';
+import 'package:i_preview_music/widget/mediaprogressbar/time_label_location.dart';
 import 'package:i_preview_music/widget/scrolling_text.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:rxdart/rxdart.dart';
@@ -192,7 +193,7 @@ class MusicPlayerView extends StatelessWidget {
           if (snapshot.data is! _PositionData) return const SizedBox.shrink();
 
           final data = snapshot.data!;
-          return ProgressBar(
+          return MediaProgressBar(
             baseBarColor: Colors.grey,
             thumbColor:
                 audioPlayer.playing ? AppColor.primary : AppColor.accent,
