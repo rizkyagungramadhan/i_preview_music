@@ -50,4 +50,6 @@ class AppDimen {
   static const radiusLarge = 16.0;
   static const radiusExtraLarge = 20.0;
   static const radiusSuperLarge = 24.0;
+
+  static const musicPlayerHeight = 140.0;
 }
