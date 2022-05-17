@@ -10,9 +10,9 @@ import 'package:i_preview_music/utility/response_exception.dart';
 class DioClient {
   late final Dio _dio;
 
-  DioClient();
+  DioClient._();
 
-  static final DioClient _dioClient = DioClient();
+  static final DioClient _dioClient = DioClient._();
 
   ///Initialize [DioClient] only once (Singleton) for API usage
   factory DioClient.initialize() {
